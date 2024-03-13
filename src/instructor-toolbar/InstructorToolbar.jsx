@@ -26,13 +26,13 @@ function getInsightsUrl(courseId) {
 function getStudioUrl(courseId, unitId) {
   const urlBase = getConfig().STUDIO_BASE_URL;
   let urlFull;
-  if (urlBase) {
-    if (unitId) {
-      urlFull = `${urlBase}/container/${unitId}`;
-    } else if (courseId) {
-      urlFull = `${urlBase}/course/${courseId}`;
-    }
-  }
+  // if (urlBase) {
+  //   if (unitId) {
+  //     urlFull = `${urlBase}/container/${unitId}`;
+  //   } else if (courseId) {
+  //     urlFull = `${urlBase}/course/${courseId}`;
+  //   }
+  // }
   return urlFull;
 }
 
